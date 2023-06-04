@@ -1,0 +1,13 @@
+@use 'mixin-classes';
+
+.wrapper { 
+  width: 100vw;
+  height: 100vh;
+  @include mixin-classes.flexCenteredColumn;
+    button {
+      @include mixin-classes.boldArial;
+      width: 60%;
+      margin: 3% 0 3% 0;
+      padding: 5% 5% 5% 5%;
+    }
+}
