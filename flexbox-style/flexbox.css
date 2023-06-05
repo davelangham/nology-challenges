@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%; 
+}
+
+.container > p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#block1{
+  background-color: rgb(163, 211, 211);
+}
+
+#block2{
+  background-color: rgb(250, 169, 71);
+}
+
+#block3{
+  background-color: rgb(240, 141, 158);
+}
