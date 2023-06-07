@@ -1,9 +1,9 @@
 //Allows the Bash terminal to utilise a prompt window.
-const inquirer = require("inquirer");
+const prompt = require("prompt-sync")();
 
 // Function instead of variable allows access from a separate code block.
 function inputValue(){
-  const getUserInput = prompt("Please enter a number.");
+  const getUserInput = prompt("Please enter a number:");
   return parseInt(getUserInput);
 };
 
