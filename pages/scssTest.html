@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/css/scssTest-Main.css">
+  <title>Mixin Test</title>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <button id="red">
+        Red
+          <button id="yellow"> 
+            <!-- I put this here specifically to test nesting in SCSS. Nesting seems to operate like a descendant . 
+            
+            Using nesting plus the &, in combination with a class/id in the equivalent html tag, allows it to operate kind of more like a child combinator except much more specific & tied to class/id. 
+          
+            I.e. Selecting only those items within the parent element & with a specific class/id -->
+            Yellow
+          </button>
+        </button>
+      <button class="green">Green</button>
+    </nav>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@mixin buttonStyle {
+  // Nesting is the equivalent of a descendant combinator & will select every button nested within the parent nav tag.
+  padding: 3% 9% 3% 9%;
+  font-weight: bold;
+  font-size: xx-large;
+  color: rgb(34, 59, 80);
+      
+    &#red {
+      background-color: indianred;
+      &:hover{
+        background-color: rgb(252, 135, 135);
+        cursor: pointer;
+      }
+    }
+    &#yellow {
+      background-color: goldenrod;
+      &:hover{
+        background-color: rgb(248, 200, 77);
+        cursor: pointer;
+      }
+    }
+    &.green {
+      background-color: darkseagreen;
+      &:hover{
+        background-color: rgb(211, 240, 211);
+        cursor: pointer;
+      }
+    }
+}

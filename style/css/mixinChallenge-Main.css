@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+main {
+  background-color: rgb(228, 226, 218);
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.wrapper button {
+  background-color: rgb(233, 222, 188);
+  width: 60%;
+  margin: 3% 0 3% 0;
+  padding: 5% 5% 5% 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.wrapper button:hover {
+  background-color: rgb(245, 243, 238);
+  cursor: pointer;
+}
+.wrapper button#button {
+  border: 2px dotted red;
+}
+.wrapper button#chip {
+  border: 2px solid blue;
+}
+.wrapper button#pill {
+  border: 2px dashed blue;
+}
+
+/*# sourceMappingURL=mixinChallenge-Main.css.map */

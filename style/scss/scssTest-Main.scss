@@ -1,0 +1,16 @@
+@use 'scssTest-Mixins';
+
+body {
+  background-color: rgb(113, 49, 177);
+}
+
+nav {
+  height: 100vh; // Allows me to center an item horizontally by expaning the parent container to 100% of the viewers height.
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  button{ 
+    @include scssTest-Mixins.buttonStyle;
+  }
+}

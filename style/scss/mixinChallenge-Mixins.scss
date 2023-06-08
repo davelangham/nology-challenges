@@ -1,0 +1,19 @@
+@mixin flexCenteredColumn{
+  display: flex;
+  flex-wrap: wrap; // Makes elements break into multiple lines instead of a single row.
+  justify-content: center;
+  align-content: center;
+}
+
+@mixin buttonStyle{
+  background-color: rgb(233, 222, 188);
+  width: 60%;
+  margin: 3% 0 3% 0;
+  padding: 5% 5% 5% 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  &:hover{
+    background-color: rgb(245, 243, 238);
+    cursor: pointer;
+  } 
+}

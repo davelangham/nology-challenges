@@ -1,0 +1,27 @@
+@use 'mixinChallenge-Mixins.scss';
+
+body {
+  margin: 0;
+}
+
+main {
+  background-color: rgb(228, 226, 218);
+}
+
+.wrapper { 
+  width: 100vw;
+  height: 100vh;
+  @include mixinChallenge-Mixins.flexCenteredColumn;
+    button {
+      @include mixinChallenge-Mixins.buttonStyle;
+        &#button { // & will only apply to classes/id's of elements within the parent element/tag/class; In this case, it's button & # selects id's.
+          border: 2px dotted red;
+        }
+        &#chip {
+          border: 2px solid blue;
+        }
+        &#pill {
+          border: 2px dashed blue;
+        }
+    }
+}

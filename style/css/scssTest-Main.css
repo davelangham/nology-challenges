@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(113, 49, 177);
+}
+
+nav {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav button {
+  padding: 3% 9% 3% 9%;
+  font-weight: bold;
+  font-size: xx-large;
+  color: rgb(34, 59, 80);
+}
+nav button#red {
+  background-color: indianred;
+}
+nav button#red:hover {
+  background-color: rgb(252, 135, 135);
+  cursor: pointer;
+}
+nav button#yellow {
+  background-color: goldenrod;
+}
+nav button#yellow:hover {
+  background-color: rgb(248, 200, 77);
+  cursor: pointer;
+}
+nav button.green {
+  background-color: darkseagreen;
+}
+nav button.green:hover {
+  background-color: rgb(211, 240, 211);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=scssTest-Main.css.map */
