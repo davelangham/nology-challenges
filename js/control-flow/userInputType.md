@@ -1,3 +1,5 @@
+# Tutorial breakdown of userInputType.js
+
 A function is needed because if I simply declare a variable, then it is declared in global scope.
 
 Global scope is not accessible within blocks
