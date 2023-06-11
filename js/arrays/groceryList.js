@@ -1,4 +1,5 @@
 const prompt = require("prompt-sync")();
+const numberToWords = require('number-to-words');
 
 let groceryLists = {
   one: ["All-Bran", "Cucumber", "Rice", "Lentils", "Potatoes", "Onions"],
@@ -36,11 +37,21 @@ function pipeDelimitedList(shoppingList) {
 // Prompts the user to select a grocery list to be displayed.
 function whichGroceryList(){
   console.log("\nPlease choose a grocery list:\n");
-  console.log("Your options are: one, two, or three.\n\nAnything else will be an invalid answer.\n")
+  console.log("Your options are: one, two, or three.\n\nAnything else will be an invalid answer.\n");
   // Passes the user selection into a variable.
-  const whichList = prompt("Please select from one, two or three: ")
-  // Checks whether the user selection is a valid array within the object groceryLists.
-  return groceryLists[whichList] || "This was an invalid answer.\n\nThe program will now exit.\n\nPlease run it again to retry.";
+  const whichList = prompt("Please select from one, two or three: ");
+  // Checks whether the user correctly inputted one, two, or three, or whether they inputted 1, 2, or 3.
+  if (isNaN(parseInt(whichList))){
+    // Checks whether the user selection is a valid array within the object groceryLists.
+    return groceryLists[whichList] || "This was an invalid answer.\n\nThe program will now exit.\n\nPlease run it again to retry.";
+  }else {
+    // Else loop runs if user incorrectly inputted a number i.e 3.
+    // numberToWords.toWords turns the number 3 into the word three and assigns it to the variable whichListWord
+    let whichListWord = numberToWords.toWords(whichList);
+    
+    // Checks whether the user selection is a valid array within the object groceryLists.
+    return groceryLists[whichListWord] || "This was an invalid answer.\n\nThe program will now exit.\n\nPlease run it again to retry.";
+  }
 };
 
 // Declares a variable and assigns the selected delimited list to it.
