@@ -1,3 +1,7 @@
+// This program is designed to run in the terminal, via Node, and requires prompt-sync & number-to-words modules. If you have Node/Nodejs installed, you proabbly have npm installed too.
+
+// You can check by running npm -v or npm --version. It should list a version number. If you have npm installed, run the command npm install prompt-sync as well as npm install number-to-words from within the same directory as this js file. Then it should all be hunky dory.
+
 const prompt = require("prompt-sync")();
 const numberToWords = require('number-to-words');
 
