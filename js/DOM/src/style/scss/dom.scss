@@ -1,0 +1,41 @@
+// Define custom properties as variables
+$background-color-light: rgba(255, 247, 174, 0.87);
+$background-color-dark: rgb(62, 74, 236);
+$text-color-light: black;
+$text-color-dark: white;
+$button-width: 100px;
+$button-height: 40px;
+$button-border-radius: 20px;
+$button-background-color-light: #2ab1ce;
+$button-background-color-dark: #ea4b3c;
+
+// Use nesting to group selectors
+body {
+  // Use variables instead of values
+  background-color: $background-color-light;
+  color: $text-color-light;
+
+  // Use & to refer to the parent selector
+  &.dark-mode {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+}
+
+#darkToggle {
+  // Use variables instead of values
+  width: $button-width;
+  height: $button-height;
+  border: none;
+  border-radius: $button-border-radius;
+  background-color: $button-background-color-light;
+  color: white;
+  font-weight: bold;
+
+  // Use & to refer to the parent selector
+  &.dark-mode {
+    background-color: $button-background-color-dark;
+    color: white;
+    font-weight: bold;
+  }
+}
