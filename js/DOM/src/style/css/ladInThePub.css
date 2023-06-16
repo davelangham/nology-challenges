@@ -1,0 +1,111 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+body.body-dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 25px;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 66px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+img {
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+#btn {
+  background-color: #ffbd4a;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 12px;
+  width: 400px;
+}
+.form.form-dark-mode {
+  box-shadow: rgb(255, 255, 255) 0px 1px 4px;
+}
+.form #darkToggle {
+  background-color: #ffbd4a;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 12px;
+  width: 250px;
+  margin: 20px 0px 20px 0px;
+}
+.message.message-dark-mode {
+  box-shadow: rgb(255, 255, 255) 0px 1px 4px;
+}
+.message--success {
+  background-color: #008000;
+  color: white;
+}
+.message--failure {
+  background-color: #b40f0f;
+  color: white;
+}
+
+#messageTxt {
+  color: #b40f0f;
+}
+#messageTxt p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=ladInThePub.css.map */
