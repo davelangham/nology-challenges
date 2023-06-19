@@ -18,8 +18,7 @@ button.addEventListener("click", function () {
   }
 });
 
-  document.getElementById("allowedCheck").onsubmit = (event) => {
-//  document.querySelector(".form").onsubmit = (event) => {
+document.querySelector(".form").onsubmit = (event) => {
   event.preventDefault();
   document.getElementById("messageTxt").innerHTML = "";
   if(document.querySelector("#drunk").value < 2 && document.querySelector("#age").value >= 18){
