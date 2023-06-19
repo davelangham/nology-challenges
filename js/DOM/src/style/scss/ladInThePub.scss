@@ -50,7 +50,7 @@ select {
   margin-bottom: 15px;
 }
 
-#btn {
+#allowedCheck {
   background-color: #ffbd4a;
   font-size: 20px;
   font-weight: bold;
@@ -108,8 +108,9 @@ select {
 }
 
 #messageTxt {
-  color: #b40f0f;
+  color: black;
   p {
+    text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 36px;
     font-weight: 900;
